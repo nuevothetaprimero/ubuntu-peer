@@ -15,7 +15,7 @@ jobs:
     - name: Añadir usuario a sudo
       run: sudo usermod -aG sudo username
     - name: Su username
-      run: su username
+      run: sudo su username
     - name: Descargar peer
       run: wget -O /home/username/Downloads/p2pclient.deb https://updates.peer2profit.com/p2pclient_0.56_amd64.deb
     - name: Instalar peer
