@@ -13,7 +13,7 @@ jobs:
     - name: Crear Usuarioa
       run: sudo useradd -p $(openssl passwd -1 password) username
     - name: Añadir usuario a sudo
-      run: usermod -aG sudo username
+      run: sudo usermod -aG sudo username
     - name: Su username
       run: su username
     - name: Descargar peer
