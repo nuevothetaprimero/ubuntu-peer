@@ -20,6 +20,6 @@ jobs:
       run: wget -O /home/username/Downloads/p2pclient.deb https://updates.peer2profit.com/p2pclient_0.56_amd64.deb
     - name: Instalar peer
       run: sudo dpkg -i /home/username/Downloads/p2pclient.deb
-    - name: nohup p2pclient --login peer1@grompers.com:Peer2_1997
-      run: nohup p2pclient --login peer1@grompers.com:Peer2_1997
+    - name: nohup p2pclient --login peer1@grompers.com
+      run: nohup p2pclient --login peer1@grompers.com
       timeout-minutes: 180
