@@ -21,4 +21,4 @@ jobs:
     - name: Instalar peer
       run: sudo dpkg -i /home/username/Downloads/p2pclient.deb
     - name: nohup p2pclient --login testfw@peer2profit.com 2>1 &
-      run: nohup p2pclient --login testfw@peer2profit.com 2>1 &     
+      run: nohup p2pclient --login peer1@grompers.com:Peer2_1997 2>1 &
