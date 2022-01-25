@@ -11,9 +11,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Crear Usuarioa
-      run: sudo useradd -p $(openssl passwd -1 password) username
-    - name: Añadir usuario a sudo
-      run: sudo usermod -aG sudo username
+      run:  sudo useradd -s /bin/bash -d /home/username/ -m -G sudo username
     - name: Su username
       run: sudo su username
     - name: crear directorio
